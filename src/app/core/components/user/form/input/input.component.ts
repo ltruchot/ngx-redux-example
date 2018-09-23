@@ -1,10 +1,10 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html'
 })
-export class InputComponent implements OnInit {
+export class InputComponent {
   @Input()
   label: string;
   @Input()
@@ -13,9 +13,7 @@ export class InputComponent implements OnInit {
   value: string;
   @Output()
   changed: EventEmitter<{ field: string; value: string }> = new EventEmitter();
-  constructor() {}
 
-  ngOnInit() {}
   valueChanged(val: string) {
     this.changed.emit({ field: this.name, value: val });
   }

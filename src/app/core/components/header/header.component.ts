@@ -1,8 +1,12 @@
+// ng
 import { Component, OnInit } from '@angular/core';
-import { IUser } from 'src/app/models/user.model';
+// npm
 import { Store } from '@ngrx/store';
-import { IStateUser } from 'src/app/store/user/user.reducer';
+// models
+import { IUser } from 'src/app/models/user.model';
+// custom store
 import { IState } from 'src/app/store/reducers';
+import { IStateUser } from 'src/app/store/user/user.reducer';
 
 @Component({
   selector: 'app-header',
