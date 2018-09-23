@@ -1,0 +1,7 @@
+<div>
+  <label for="name">{{ label }}</label>
+  <input #input
+         name="name"
+         [value]="value"
+         (input)="valueChanged(input.value)" />
+</div>
