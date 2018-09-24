@@ -15,7 +15,7 @@ import { IUser } from 'src/app/models/user.model';
 
 @Component({
   selector: 'app-form',
-  templateUrl: './form.component.html'
+  templateUrl: './form.component.html',
 })
 export class FormComponent implements OnInit {
   user: IUser;
@@ -25,7 +25,7 @@ export class FormComponent implements OnInit {
     // subscribe to any user change
     this._store.select('user').subscribe((user: IStateUser) => {
       this.user = user.form;
-      console.log(this.user);
+      // console.log(this.user);
     });
 
     // init form with user data

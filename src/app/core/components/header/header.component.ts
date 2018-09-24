@@ -10,7 +10,7 @@ import { IStateUser } from 'src/app/store/user/user.reducer';
 
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html'
+  templateUrl: './header.component.html',
 })
 export class HeaderComponent implements OnInit {
   user: IUser;

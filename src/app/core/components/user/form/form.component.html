@@ -2,19 +2,19 @@
       class="form"
       (ngSubmit)="saveFormChange($event)"
       novalidate>
-  <app-input label="Firstname"
-             name="firstname"
-             [value]="user?.firstname"
-             (changed)="dispatchFormChange($event)"></app-input>
-  <app-input label="Lastname"
-             name="lastname"
-             [value]="user?.lastname"
-             (changed)="dispatchFormChange($event)"></app-input>
-  <app-input label="Address"
-             name="address"
-             [value]="user?.address"
-             (changed)="dispatchFormChange($event)"></app-input>
-  <button type="
+    <app-input label="Firstname"
+               name="firstname"
+               [value]="user?.firstname"
+               (changed)="dispatchFormChange($event)"></app-input>
+    <app-input label="Lastname"
+               name="lastname"
+               [value]="user?.lastname"
+               (changed)="dispatchFormChange($event)"></app-input>
+    <app-input label="Address"
+               name="address"
+               [value]="user?.address"
+               (changed)="dispatchFormChange($event)"></app-input>
+    <button type="
              submit"
-          [disabled]="edit.invalid">Save</button>
+            [disabled]="edit.invalid">Save</button>
 </form>
